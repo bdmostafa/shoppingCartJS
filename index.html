@@ -63,7 +63,7 @@
 
                      <div class="col-md-8">
                         <h5>Subtotal: </h5>
-                        <h5>Tax:</h5>
+                        <h5>Tax (12%):</h5>
                         <h5>Total:</h5>
                      </div>
 
@@ -110,13 +110,13 @@
          // const caseCount = getInputValue('case');
 
          const subTotalPrice = getInputValue('phone') * 1219 + getInputValue('case') * 59;
-         document.getElementById('subTotal').innerText = subTotalPrice;
+         document.getElementById('subTotal').innerText = '$' + subTotalPrice;
 
          const taxAmount = Math.round(subTotalPrice * 0.12);
-         document.getElementById('tax').innerText = taxAmount;
+         document.getElementById('tax').innerText = '$' + taxAmount;
 
          const total = subTotalPrice + taxAmount;
-         document.getElementById('total').innerText = total;
+         document.getElementById('total').innerText = '$' + total;
 
       }
 
