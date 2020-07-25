@@ -83,6 +83,13 @@
    </section>
 
    <script>
+      // const removeItems = document.getElementsByClassName('remove-item');
+      // for (let item of removeItems) {
+      //    item.addEventListener('click', function (event) {
+      //       event.target.parentElement.parentElement.remove();
+      //    })
+      // }
+
       function handleProductChange(product, isIncrease) {
          const productInput = document.getElementById(product + '-count');
          const productCount = parseInt(productInput.value);
